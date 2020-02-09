@@ -9,8 +9,7 @@
     "build": "lerna run build --scope=@mono/components --scope=@mono/core --parallel",
     "clean": "lerna run clean --scope=@mono/components --scope=@mono/core --parallel",
     "test": "CI=true FORCE_COLOR=true lerna run test -- --coverage",
-    "storybook": "yarn workspace @mono/components storybook",
-    "dev": "yarn start && yarn storybook"
+    "storybook": "yarn workspace @mono/components storybook"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.19.0",
