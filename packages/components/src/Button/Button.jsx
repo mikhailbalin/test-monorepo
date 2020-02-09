@@ -1,2 +1,2 @@
-import React from "react";
-export default ({ children, ...rest }) => <button {...rest}>{children}</button>;
+import React from 'react';
+export default ({ children, ...rest }) => <button {...rest}>{children}sc</button>;

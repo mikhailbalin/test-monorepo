@@ -9,6 +9,7 @@
     "build": "lerna run build --scope=@mono/components --scope=@mono/core --parallel",
     "clean": "lerna run clean --scope=@mono/components --scope=@mono/core --parallel",
     "test": "CI=true FORCE_COLOR=true lerna run test -- --coverage",
+    "lint": "lerna run lint --scope=@mono/core --stream",
     "storybook": "yarn workspace @mono/components storybook"
   },
   "devDependencies": {
@@ -29,5 +30,10 @@
     "prettier": "^1.19.1",
     "rimraf": "^3.0.1",
     "typescript": "^3.7.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
   }
 }
