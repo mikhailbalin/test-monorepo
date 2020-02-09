@@ -1,8 +1,8 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import { SHARED_CONFIG } from "@mono/core";
-import { Button, Welcome } from "@mono/components";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import { SHARED_CONFIG } from '@mono/core';
+import { Button, Welcome } from '@mono/components';
 
 const App: React.FC = () => {
   return (
@@ -16,12 +16,7 @@ const App: React.FC = () => {
           </span>
         </Button>
         <Welcome />
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
           Learn React
         </a>
         <p>Is shared: {SHARED_CONFIG.SHARED}</p>

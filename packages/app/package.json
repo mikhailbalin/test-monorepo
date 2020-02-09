@@ -3,12 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "@mono/components": "*",
     "@mono/core": "*",
-    "@mono/components": "*"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.1.0",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
@@ -35,6 +38,16 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx,js,jsx}",
+      "!src/setupTests.{ts,tsx,js,jsx}",
+      "!src/index.{ts,tsx,js,jsx}",
+      "!src/serviceWorker.{ts,tsx,js,jsx}",
+      "!src/**/*.(spec|test|stories).{ts,tsx,js,jsx}",
+      "!src/**/react-app-env.d.ts"
     ]
   }
 }

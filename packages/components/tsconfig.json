@@ -11,6 +11,12 @@
     "composite": true,
     "rootDir": "src",
     "outDir": "dist",
-    "jsx": "react"
+    "jsx": "react",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   }
 }

@@ -8,7 +8,7 @@
     "start": "yarn clean && yarn build && lerna run start --parallel",
     "build": "lerna run build --scope=@mono/components --scope=@mono/core --parallel",
     "clean": "lerna run clean --scope=@mono/components --scope=@mono/core --parallel",
-    "test": "lerna run test --stream",
+    "test": "CI=true FORCE_COLOR=true lerna run test -- --coverage",
     "storybook": "yarn workspace @mono/components storybook",
     "dev": "yarn start && yarn storybook"
   },

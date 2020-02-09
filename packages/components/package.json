@@ -19,5 +19,13 @@
     "test": "react-scripts test",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx,js,jsx}",
+      "!src/**/*.(spec|test|stories).{ts,tsx,js,jsx}",
+      "!src/**/index.{ts,js}",
+      "!src/**/react-app-env.d.ts"
+    ]
   }
 }

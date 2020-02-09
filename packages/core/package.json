@@ -9,5 +9,12 @@
     "build": "tsc --build --preserveWatchOutput",
     "clean": "tsc --build --clean && rimraf dist",
     "test": "react-scripts test"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx,js,jsx}",
+      "!src/**/*.(spec|test|stories).{ts,tsx,js,jsx}",
+      "!src/**/react-app-env.d.ts"
+    ]
   }
 }
