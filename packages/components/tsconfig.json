@@ -5,7 +5,7 @@
   ],
   "exclude": [
     "**/*.spec.?s",
-    "**/*.stories.?s",
+    "**/*.stories.?s"
   ],
   "compilerOptions": {
     "composite": true,

@@ -16,6 +16,7 @@
     "start": "yarn build --watch",
     "build": "tsc --build --preserveWatchOutput",
     "clean": "tsc --build --clean && rimraf dist",
+    "test": "react-scripts test",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook"
   }

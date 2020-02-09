@@ -3,6 +3,9 @@
   "include": [
     "./src"
   ],
+  "exclude": [
+    "**/*.spec.?s"
+  ],
   "compilerOptions": {
     "composite": true,
     "rootDir": "src",
